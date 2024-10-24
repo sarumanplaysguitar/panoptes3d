@@ -242,9 +242,9 @@ void main(void) {
 
 // FPS stats (by mrdoob) 📊
 
-var stats = new Stats();
-document.body.appendChild(stats.dom);
-requestAnimationFrame(function loop() { stats.update(); requestAnimationFrame(loop) });
+// var stats = new Stats();
+// document.body.appendChild(stats.dom);
+// requestAnimationFrame(function loop() { stats.update(); requestAnimationFrame(loop) });
 
 
 // Camera settings 🎥
@@ -328,85 +328,85 @@ scene.add(ambient_light);
 // with this, or separate all 3 of them
 const sky_colors = {
     day: [
-    0x404040,
-    0x9C9C9C,
-    0x9C9C9C,
-    0x9C9C9C,
-    0x9C9C9C,
-    0x9C9C9C
+    0x94cbfe,
+    0xe3fbff,
+    0xc5efff,
+    0xb5e7ff,
+    0x95cbff,
+    0xb5e7ff
     ],
     green: [
-    0x404040,
-    0x9C9C9C,
-    0x9C9C9C,
-    0x9C9C9C,
-    0x9C9C9C,
-    0x9C9C9C
+    0x80bfff,
+    0xc5eef3,
+    0x9cdef7,
+    0x78c1fd,
+    0x77a8ff,
+    0x9addfc
     ],
     green_golden: [
-    0x404040,
-    0x9C9C9C,
-    0x9C9C9C,
-    0x9C9C9C,
-    0x9C9C9C,
-    0x9C9C9C
+    0x5f9df3,
+    0xad9ed6,
+    0xe4ffee,
+    0x6ccaff,
+    0x5f9df3,
+    0x7abfff
     ],
     golden: [
-    0x404040,
-    0x9C9C9C,
-    0x737373,
-    0x737373,
-    0x737373,
-    0x737373
+    0x4c61d1,
+    0xcfbee8,
+    0xbad5fd,
+    0x5c76da,
+    0x5c76da,
+    0x6f84e3
     ],
     twilight: [
-    0x404040,
-    0x9C9C9C,
-    0x737373,
-    0x737373,
-    0x737373,
-    0x737373
+    0x27247b,
+    0x7060ae,
+    0x5659a2,
+    0x2c368a,
+    0x2a277d,
+    0x36419c
     ],
     twilight_night: [
-    0x404040,
-    0x9C9C9C,
-    0x737373,
-    0x737373,
-    0x737373,
-    0x737373
+    0x00003f,
+    0x101063,
+    0x0a0a4f,
+    0x050539,
+    0x050539,
+    0x0b0b52
     ],
     night: [
-    0x171717,
-    0x262626,
-    0x262626,
-    0x262626,
-    0x262626,
-    0x262626
+    0x00003f,
+    0x0a0a4f,
+    0x070744,
+    0x050539,
+    0x050539,
+    0x0b0b52
     ],
     deep_night: [
-    0x171717,
-    0x262626,
-    0x262626,
-    0x262626,
-    0x262626,
-    0x262626
+    0x00003f,
+    0x0a0a4f,
+    0x070744,
+    0x050539,
+    0x050539,
+    0x0b0b52
     ]
-};
-
-const ambient_light_colors = {
-    day: 0x595959,
-    green: 0x595959,
-    green_golden: 0x595959,
-    golden: 0x595959,
-    twilight: 0x595959,
-    twilight_night: 0x595959,
-    night: 0x595959,
-    deep_night: 0x595959
-}
-
-const star_colors = {
-    o: 0xD0D0ED, b: 0xBFD0E5, a: 0xCBD2EC, f: 0xE3F1F1, g: 0xF5F7EF, k: 0xE5E5D1, m: 0xE3CECE
-};
+  };
+  
+  const ambient_light_colors = {
+    day: 0xa6a9ff,
+    green: 0xa6a9ff,
+    green_golden: 0xa6a9ff,
+    golden: 0xd7a6ff,
+    twilight: 0xbfa6ff,
+    twilight_night: 0x6947bf,
+    night: 0x6947bf,
+    deep_night: 0x6947bf
+  }
+  
+  const star_colors = {
+    o: 0xc8c7ff, b: 0xbbdaff, a: 0xe7ecff, f: 0xedffff, g: 0xfafff1, k: 0xffffca, m: 0xffcdcd
+  };
 
 // const star_colors = [
 //   // 0xff0000, 0xc8c7ff, 0xbbdaff, 0xe7ecff, 0xedffff, 0xfafff1, 0xffffca, 0xffcdcd
